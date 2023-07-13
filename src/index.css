@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+  --color-parrafo: rgb(59, 60, 61);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+.contenedor{
+  width: 70%;
+  margin: 0 auto;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #000;
+  transform-origin: 0%;
+}
+.framer .animation-x {
+  display: block;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+.framer .animation-y{
+  display: block;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+.btn_volver{  
+  margin-top: 30px;
+  
+}
+.btn_volver span{
+  background-color: #bde5ff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px, rgba(0, 0, 0, 0.05) 0px 1px 5px;
+  cursor: pointer;
+}
+.btn_volver span:hover{
+  background-color: #7fffd4;
+}
+
+
+/* Estilos para el contenedor del loading */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* Estilos para el spinner o animación de carga */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+
+/* Animación para el spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.publicado{
+  display: flex;
+  gap: 10px;
+}
+.publicado img{
+  padding: 2px;
+  background-color: #9ba82891;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .contenedor{
+    width: 95%;
+  }
+}
+
+/* Estilos para pantallas pequeñas (móvil) */
+@media (max-width: 768px) {
+  /* Agrega aquí los estilos específicos para pantallas pequeñas */
+  /* Puedes modificar el diseño, tamaños de fuente, márgenes, etc. */
+}
+
+/* Estilos para pantallas extra pequeñas (móvil pequeño) */
+@media (max-width: 576px) {
+  /* Agrega aquí los estilos específicos para pantallas extra pequeñas */
+  /* Puedes modificar el diseño, tamaños de fuente, márgenes, etc. */
+}

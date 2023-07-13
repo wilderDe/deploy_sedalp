@@ -1,0 +1,18 @@
+.misionvision{
+    margin: 100px 0;
+}
+.mision{
+    text-align: justify;
+}
+.mision h2 {
+    color: rgb(46, 180, 180);
+}
+.mision p {
+    border-left: 3px solid rgb(54, 204, 204);
+    padding-left: 10px;
+    color: var(--color-parrafo)
+}
+
+@media (max-width: 992px) {
+    
+}

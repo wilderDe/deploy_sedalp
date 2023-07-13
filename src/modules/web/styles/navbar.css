@@ -1,0 +1,126 @@
+.navbar{
+    position: fixed; 
+    width: 100%;
+    padding: 0 50px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.7);
+}
+
+.navbar-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.img-gober{
+    width: 100px;
+}
+.img-sedalp{
+    width: 150px;
+}
+
+/*  menu links */
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu-link{
+    font-weight: 700;
+    padding: 15px 10px;
+}
+.menu-link:hover{
+    background-color: #9292921f;
+    border-radius: 10px;
+    color: #696969;
+}
+.active-link{
+    background-color: #9292921f;
+    border-radius: 10px;
+    color: #696969;
+}
+
+@media (max-width: 992px) {
+    .navbar{
+        padding: 0 20px;
+        height: 55px;
+
+    }
+    .navbar-logos{
+        gap: 5px;
+    }
+    .img-gober{
+        width: 90px;
+    }
+    .img-sedalp{
+        width: 140px;
+    }
+    
+    /*  menu links */
+    .navbar-menu{
+        gap: 20px;
+    }
+}
+  
+  
+@media (max-width: 768px) {
+    /* CSS MENU MOBILE */
+    .navbar-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-mobile img{
+        width: 30px;
+    }
+    .navbar-mobile_content{
+        background: #282b26d2;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .navbar-mobile_items{
+        padding: 30px;
+    
+    }
+    .navbar-mobile-end{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+    .navbar-mobile-end img {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        width: 40px;
+        padding: 2px 2px;
+    }
+    .navbar-mobile_links{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-mobile_links >a {
+        color: #fff;
+    }
+    .active-link{
+        background: #807e7e;
+    }
+
+}
+  
+ 
+@media (max-width: 576px) {
+    .img-gober{
+        width: 70px;
+    }
+    .img-sedalp{
+        width: 100px;
+    }
+}

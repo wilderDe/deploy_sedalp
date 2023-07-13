@@ -1,0 +1,25 @@
+.flotantes{
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.flotantes-icons{
+    padding: 5px 5px;
+    background-color: #a3a4ff;
+    border-radius: 10px;
+}
+.flotantes-icons img{
+    width: 30px;
+    cursor: pointer;
+}
+.flotantes-link{
+    background: #000000ad;
+    border-radius: 10px;
+}
+.flotantes-link img{
+    width: 35px;
+    cursor: pointer;
+}

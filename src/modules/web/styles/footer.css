@@ -1,0 +1,45 @@
+.footer{
+    padding: 30px 0;
+}
+.foo{
+    display: flex;
+    justify-content: space-between;
+}
+.foo-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foo-right{
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+.foo-right img{
+    width: 30px;
+    height: 30px;
+}
+.foo-right img:hover{
+    background: #5348bb57;
+    border-radius: 10px;
+}
+.copy{
+    font-size: 14px;
+    color: rgb(134, 134, 134);
+}
+
+@media (max-width: 576px) {
+    .footer{
+        text-align: center;
+    }
+    .foo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .foo-left{
+        gap: 15px;
+    }
+}

@@ -1,0 +1,71 @@
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.content-hero{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-title{
+    width: 58%;
+    background: #0000005b;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calendar{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.calendar img{
+    width: 50px;
+    padding: 0 5px;
+    background: #c4890c;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .content-hero{
+        padding-top: 50px;
+    }
+    .hero-title{
+        width: 70%;
+        font-size: 20px;
+    }
+    .calendar{
+        gap: 10px;
+    }
+    .calendar img{
+        width: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title{
+        width: 80%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 576px) {
+    .content-hero{
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero-title{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+  

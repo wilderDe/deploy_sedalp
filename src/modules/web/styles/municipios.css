@@ -1,0 +1,138 @@
+
+.selecc-municipio{
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selecc-item{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 15px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    outline: none;
+}
+
+/* ALCALDE */
+.alcalde{
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.alcalde-img{
+    width: 300px;
+}
+.alcalde-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.alcalde-datos{
+    width: 300px;
+}
+.alcalde-text{
+    margin-bottom:5px;
+}
+.alcalde-text p:nth-child(1){
+    font-weight: 700;
+}
+
+.alcalde-documentos{
+    width: 330px;
+}
+
+.cont-docu{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 5px 5px;
+    padding: 10px;
+    gap: 10px;
+}
+.cont-docu:hover{
+    background-color: rgba(99, 39, 177, 0.116);
+}
+.cont-docu img {
+    width: 35px;
+    height: 35px;
+}
+
+/* GRAFICO DE BARRAS */
+.barras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.barra-content{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 5px 5px;
+    width: 45%;
+    height: 300px;
+}
+
+/*  Mapa Municipio*/
+
+.mapa-municipio{
+    border: 1px solid rebeccapurple;
+    margin-bottom: 50px;
+    height: 500px;
+}
+.mapa-municipio iframe{
+    width: 100%;
+    height: 100%;
+}
+/* Seleccion de iconos barras y tablas */
+.content_select-icons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.select-icons{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 5px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.select-icons:hover{
+    background-color: #7fffd48e;
+}
+.select-icons_active{
+    background-color: #7fffd4;
+}
+
+
+@media (max-width: 1200px) {
+    .barra-content{
+        width: 40%;
+        height: 200px;
+    }
+    
+}
+@media (max-width: 786px) {
+    .barra-content{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px, rgba(0, 0, 0, 0.05) 0px 5px 5px;
+        width: 100%;
+        height: 200px;
+        overflow:auto
+    }
+    
+}
+@media (max-width: 576px) {
+    .selecc-municipio{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .selecc-item{
+        width: 100%;
+    }
+}
